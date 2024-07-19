@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinhVien"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Mã sinh viên:"
+                android:textSize="18dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edMaSV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã sinh viên"
+                android:layout_weight="1">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Họ và tên:"
+                android:textSize="18dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edNameSV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Họ và tên"
+                android:layout_weight="1">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Địa chỉ:"
+                android:textSize="18dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập địa chỉ"
+                android:layout_weight="1">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Ngày sinh: "
+                android:textSize="18dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edNgaySinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ngày sinh"
+                android:layout_weight="1">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Giới tính:"
+                android:textSize="18dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập giới tính"
+                android:layout_weight="1">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Email:"
+                android:textSize="18dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập email"
+                android:layout_weight="1">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Điểm TB:"
+                android:textSize="18dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edDiemTB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập điểm trung bình"
+                android:layout_weight="1"
+                android:inputType="numberDecimal">
+
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiện danh sách">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSinhVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
